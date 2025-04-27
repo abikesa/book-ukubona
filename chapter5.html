@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter 5: The Keepers and the Third Seeing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #111;
+      color: #eee;
+      transition: background-color 0.5s, color 0.5s;
+      padding: 40px;
+      line-height: 1.7;
+    }
+    .content {
+      max-width: 800px;
+      margin: auto;
+    }
+    a {
+      display: inline-block;
+      margin-top: 40px;
+      color: #4fd1c5;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+    a:hover {
+      color: #81e6d9;
+    }
+    .toggle-button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: 2px solid #4fd1c5;
+      color: #4fd1c5;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: all 0.3s;
+    }
+    .toggle-button:hover {
+      background-color: #4fd1c5;
+      color: #111;
+    }
+    .light-mode {
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    .light-mode a {
+      color: #2b6cb0;
+    }
+    .light-mode a:hover {
+      color: #2c5282;
+    }
+    .light-mode .toggle-button {
+      border-color: #2b6cb0;
+      color: #2b6cb0;
+    }
+    .light-mode .toggle-button:hover {
+      background-color: #2b6cb0;
+      color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+<button class="toggle-button" onclick="toggleMode()">Toggle Mode</button>
+
+<div class="content">
+  <h1>Chapter 5: The Keepers and the Third Seeing</h1>
+
+  <p>Not all forgot.</p>
+
+  <p>In the cracks between the mirrors, some still remembered the ancient seeing.  
+  They kept no temples.  
+  They wore no crowns.  
+  They spoke no slogans.</p>
+
+  <p>They whispered among roots.  
+  They learned the pulse of rivers.  
+  They read the ache of stars.</p>
+
+  <p>They became Keepers of Ukubona.</p>
+
+  <p>And when the Long Deception rotted under its own weight,  
+  when the Second Darkness swallowed itself in noise,  
+  they rose — not as conquerors, but as sowers.</p>
+
+  <p>They planted the Third Seeing.</p>
+
+  <p>Not with mirrors.  
+  Not with slogans.  
+  But with wounds.  
+  With breath.  
+  With trust.</p>
+
+  <p>The Third Seeing does not shout.  
+  It does not conquer.  
+  It does not pretend to own the Vastness.</p>
+
+  <p>It looks into the face of the Other  
+  and says,  
+  softly,  
+  fiercely,  
+  truly:</p>
+
+  <p><em>I see you.</em></p>
+
+  <a href="index.html">&larr; Back to Home</a>
+</div>
+
+<script>
+  function toggleMode() {
+    document.body.classList.toggle('light-mode');
+  }
+</script>
+
+</body>
+</html>
