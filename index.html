@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Book of Ukubona</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #111;
+      color: #eee;
+      transition: background-color 0.5s, color 0.5s;
+    }
+    .container {
+      max-width: 800px;
+      margin: 80px auto;
+      text-align: center;
+    }
+    a {
+      display: block;
+      margin: 20px 0;
+      color: #4fd1c5;
+      text-decoration: none;
+      font-size: 1.5em;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #81e6d9;
+    }
+    .toggle-button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: 2px solid #4fd1c5;
+      color: #4fd1c5;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: all 0.3s;
+    }
+    .toggle-button:hover {
+      background-color: #4fd1c5;
+      color: #111;
+    }
+    .light-mode {
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    .light-mode a {
+      color: #2b6cb0;
+    }
+    .light-mode a:hover {
+      color: #2c5282;
+    }
+    .light-mode .toggle-button {
+      border-color: #2b6cb0;
+      color: #2b6cb0;
+    }
+    .light-mode .toggle-button:hover {
+      background-color: #2b6cb0;
+      color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+<button class="toggle-button" onclick="toggleMode()">Toggle Mode</button>
+
+<div class="container">
+  <h1>The Book of Ukubona</h1>
+  <a href="chapter1.html">Chapter 1: The First Darkness</a>
+  <a href="chapter2.html">Chapter 2: The First Seeing</a>
+  <a href="chapter3.html">Chapter 3: The Long Deception</a>
+  <a href="chapter4.html">Chapter 4: The Second Darkness</a>
+  <a href="chapter5.html">Chapter 5: The Keepers and the Third Seeing</a>
+</div>
+
+<script>
+  function toggleMode() {
+    document.body.classList.toggle('light-mode');
+  }
+</script>
+
+</body>
+</html>
