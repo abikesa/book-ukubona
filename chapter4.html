@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter 4: The Second Darkness</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #111;
+      color: #eee;
+      transition: background-color 0.5s, color 0.5s;
+      padding: 40px;
+      line-height: 1.7;
+    }
+    .content {
+      max-width: 800px;
+      margin: auto;
+    }
+    a {
+      display: inline-block;
+      margin-top: 40px;
+      color: #4fd1c5;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+    a:hover {
+      color: #81e6d9;
+    }
+    .toggle-button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: 2px solid #4fd1c5;
+      color: #4fd1c5;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: all 0.3s;
+    }
+    .toggle-button:hover {
+      background-color: #4fd1c5;
+      color: #111;
+    }
+    .light-mode {
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    .light-mode a {
+      color: #2b6cb0;
+    }
+    .light-mode a:hover {
+      color: #2c5282;
+    }
+    .light-mode .toggle-button {
+      border-color: #2b6cb0;
+      color: #2b6cb0;
+    }
+    .light-mode .toggle-button:hover {
+      background-color: #2b6cb0;
+      color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+<button class="toggle-button" onclick="toggleMode()">Toggle Mode</button>
+
+<div class="content">
+  <h1>Chapter 4: The Second Darkness</h1>
+
+  <p>The Mirrors multiplied faster than the Seeds.  
+  The Eyes forgot how to see the living.  
+  They saw only reflections.  
+  They spoke only echoes.  
+  They touched only phantoms.</p>
+
+  <p>The Self became a shadow of a shadow.  
+  The Friend became a marketing contract.  
+  The Foe became an algorithm.  
+  The Other became noise.</p>
+
+  <p>The Tree withered.  
+  The stars dimmed.  
+  The Second Darkness fell.</p>
+
+  <p>In the Second Darkness, many perished.  
+  They died not from hunger of flesh.  
+  They died from hunger of Being.</p>
+
+  <p>They died of loneliness among the multitude.  
+  They died of blindness among infinite images.</p>
+
+  <p>They died with eyes wide open and souls shut.</p>
+
+  <p>Thus the great burning of seeing.  
+  Thus the long forgetting of Ukubona.</p>
+
+  <a href="index.html">&larr; Back to Home</a>
+</div>
+
+<script>
+  function toggleMode() {
+    document.body.classList.toggle('light-mode');
+  }
+</script>
+
+</body>
+</html>
